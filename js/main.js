@@ -69,7 +69,10 @@ btnFilter.on("click", function () {
         $(".message-erorr").css("display", "block")
         $("#ViaVN").val("")
         $("#ViaForeign").val("")
-        $(".copy-btn").css("display", "none")     
+        $(".copy-btn").css("display", "none")    
+        $("#amountViaVn").text("0")
+        $("#amountViaForeign").text("0") 
+        $("#totalVia").text("0")
     }
 })
 
