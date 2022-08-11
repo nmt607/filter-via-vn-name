@@ -1,0 +1,48 @@
+.app {
+    display: flex;
+}
+
+.filter-via-name {
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 15px;
+    width: 860px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.systax {
+    font-weight: bold;
+}
+
+.message-erorr{
+    display: none;
+}
+
+.btn-filter {
+    min-width: 108px;
+}
+
+.copy-btn{
+    display:none
+}
+
+.copy-success {
+    display: none;
+}
+
+.header-top .loading-filter {
+    display: none;
+}
+
+.via-text-wrapper .via-text {
+    min-height: 200px;
+}
+
+.via-result-wrapper .via-result,.via-remaining-wrap .via-result {
+    min-height: 150px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "codefiltervietnamesename",
+  "version": "1.0.0",
+  "description": "lọc tên tiếng việt",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "filter",
+    "vietnamese",
+    "name"
+  ],
+  "author": "tien nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0"
+  }
+}
