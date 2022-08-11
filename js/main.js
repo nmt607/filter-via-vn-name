@@ -63,6 +63,8 @@ btnFilter.on("click", function () {
         $("#amountViaForeign").text(arrViaForeign.length)
     } else {
         $(".message-erorr").css("display", "block")
+        $("#ViaVN").val("")
+        $("#ViaForeign").val("")
     }
 })
 
