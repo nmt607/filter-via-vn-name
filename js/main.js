@@ -53,9 +53,13 @@ btnFilter.on("click", function () {
         // show copy button
         if (arrViaVN.length > 0) {
             $(".copy-btn-vn").css("display", "block")
+        }else{
+            $(".copy-btn-vn").css("display", "none")
         }
         if (arrViaForeign.length > 0) {
             $(".copy-btn-foreign").css("display", "block")
+        }else{
+            $(".copy-btn-foreign").css("display", "none")
         }
 
         // statistical result
