@@ -65,6 +65,7 @@ btnFilter.on("click", function () {
         $(".message-erorr").css("display", "block")
         $("#ViaVN").val("")
         $("#ViaForeign").val("")
+        $(".copy-btn").css("display", "none")     
     }
 })
 
