@@ -19,7 +19,7 @@
     font-weight: bold;
 }
 
-.message-erorr{
+.message-erorr {
     display: none;
 }
 
@@ -27,8 +27,8 @@
     min-width: 108px;
 }
 
-.copy-btn{
-    display:none
+.copy-btn {
+    display: none;
 }
 
 .copy-success {
@@ -43,6 +43,16 @@
     min-height: 200px;
 }
 
-.via-result-wrapper .via-result,.via-remaining-wrap .via-result {
+.via-result-wrapper .via-result,
+.via-remaining-wrap .via-result {
     min-height: 150px;
+}
+
+@media (max-width: 500.98px) {
+    .header-top {
+        display: block;
+    }
+    .btn-filter { 
+        margin-top: 5px;
+    }
 }
