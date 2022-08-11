@@ -54,7 +54,9 @@ btnFilter.on("click", function () {
         if (arrViaVN.length > 0) {
             $(".copy-btn-vn").css("display", "block")
         }
-        $(".copy-btn-foreign").css("display", "block")
+        if (arrViaForeign.length > 0) {
+            $(".copy-btn-foreign").css("display", "block")
+        }
 
         // statistical result
         $("#amountViaVn").text(arrViaVN.length)
