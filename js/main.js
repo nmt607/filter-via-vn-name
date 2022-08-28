@@ -7,7 +7,10 @@ const btnFilter = $("#btnFilter")
 // filter VN Character action
 btnFilter.on("click", function () {
     let viaData = $("#viaData").val()
-    let arrVia = viaData.split(/\r?\n/)
+    let arrVia = viaData.split(/\r?\n/).filter(function (el) {
+        return el != "";
+    });
+
     let arrViaVN = []
     let arrViaForeign = []
     if (viaData) {
@@ -53,12 +56,12 @@ btnFilter.on("click", function () {
         // show copy button
         if (arrViaVN.length > 0) {
             $(".copy-btn-vn").css("display", "block")
-        }else{
+        } else {
             $(".copy-btn-vn").css("display", "none")
         }
         if (arrViaForeign.length > 0) {
             $(".copy-btn-foreign").css("display", "block")
-        }else{
+        } else {
             $(".copy-btn-foreign").css("display", "none")
         }
 
@@ -69,9 +72,9 @@ btnFilter.on("click", function () {
         $(".message-erorr").css("display", "block")
         $("#ViaVN").val("")
         $("#ViaForeign").val("")
-        $(".copy-btn").css("display", "none")    
+        $(".copy-btn").css("display", "none")
         $("#amountViaVn").text("0")
-        $("#amountViaForeign").text("0") 
+        $("#amountViaForeign").text("0")
         $("#totalVia").text("0")
     }
 })
